@@ -2,7 +2,7 @@
   "name": "magenta-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rausn.github.io/vis-ai-composition-simple",
+  "homepage": "https://visvar.github.io/maicomposition-simple",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

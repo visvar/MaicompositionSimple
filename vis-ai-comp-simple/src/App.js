@@ -3255,9 +3255,9 @@ function App () {
                     {numnotesrecorded}
                   </Typography>
                 </Box>
-                <Box sx={{ flexGrow: 4 }} />
+                <Box sx={{ flexGrow: 3 }} />
                 <Box sx={{ flexGrow: 1 }}>
-                  <Button variant='outlined' color='secondary' onClick={()=> {console.log('generate'); loadnewRNN()}}>Generate</Button>
+                  <Button variant='outlined' color='secondary' onClick={()=> {console.log('generate'); loadnewRNN()}}>Generate 5</Button>
                 </Box>
                 {/**
           <Box sx={{ flexGrow: 1 }}>
@@ -3419,8 +3419,11 @@ function App () {
                 </Box>
               </Box>
                */}
-                <Box sx={{ flexGrow: 2 }} />
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Box sx={{ flexGrow: 3 }} />
+                <Box sx={{ flexGrow: 1 }}>
+                  <Button variant='outlined' color='secondary' onClick={()=> {nums = 100; loadnewRNN()}}>Generate100</Button>
+                </Box>
+                <Box sx={{ flexGrow: 2, display: { xs: 'none', md: 'flex' } }}>
                   {/**
                   <FormControl variant='standard'>
                     <InputLabel sx={{ color: darkmode === 'LightMode' ? 'black' : 'white' }} id='sampleslabel'>Samples</InputLabel>
@@ -3494,11 +3497,6 @@ function App () {
                   <CircularProgress sx={{ display: 'none' }} id='progress' color='secondary' disableShrink variant='indeterminate' />
                 </Box>
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                  <Tooltip title='Generate 100 Samples' placement='bottom'>
-                    <IconButton color='inherit' onClick={()=>{nums = 100; loadnewRNN()}}>
-                      <MenuIcon color='secondary' />
-                    </IconButton>
-                  </Tooltip>
                   <Tooltip title='Clear data' placement='bottom'>
                     <IconButton color='inherit' onClick={newData}>
                       <ClearAllIcon color='secondary' />

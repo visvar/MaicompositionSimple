@@ -3382,6 +3382,7 @@ function App () {
                   </Tooltip>
                 </div>
                 */}
+                <a href="https://github.com/visvar/vis-ai-comp-simple" title="More Information" id="foo">More Information</a>
                 <Box sx={{ flexGrow: 4 }} />
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                   <Tooltip title={tooltip('infoPiano', 'record')} placement='bottom'>

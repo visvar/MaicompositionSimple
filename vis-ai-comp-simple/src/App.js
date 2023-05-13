@@ -1312,7 +1312,7 @@ function App () {
           color: [],
           temp: [-1],
           parent: [0],
-          lastnotai: 64,
+          lastnotai: tt.lastnotai,
           fill: [true],
           modelUsed: [-1]
         }
